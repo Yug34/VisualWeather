@@ -1,0 +1,78 @@
+<!--
+Rain by Caleb Miller- https://codepen.io/MillerTime/pen/oXmgJe
+Snowstorm by Scott Schiller- http://www.schillmania.com/projects/snowstorm/#:~:text=Snowstorm%20is%20a%20JavaScript%2Ddriven,used%20for%20the%20snow%20effect.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>WeatherApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!--Custom CSS-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/fog.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <canvas id="rain"></canvas>
+    <div id="fogDiv"></div>
+    <div id="sunnyDiv"></div>
+    <div id="cloudyDiv"></div>
+
+    <div class="container text-center">
+      <!--Display weather-->
+      <p id="overall">Weather</p>
+      <span id="place">Location</span>
+      <span id="country"></span>
+      <div id="date"></div>
+      <p id="temp">00°C</p>
+      
+      <div class="container mb-4">
+        <div class="row">
+          
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/humidity.png" alt="humidity">
+              <p id="humidity">00<small style="font-size: 25px">%</small></p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/wind3.png" alt="wind">
+              <p id="wind">00<small style="font-size: 25px"> Knots</small><small><small>  00°</small></small></p>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="img/cloud.png" style="width: 120px;" alt="cloud">
+              <p id="cloud">00<small style="font-size: 25px">Okta</small></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      <!--Search location-->
+      <div class="input-group mb-5">
+        <input type="text" class="form-control form-control-lg" onfocus="this.value=''" placeholder="Search location" id="inputPlace">
+        <div class="input-group-append">
+          <button class="btn btn-dark" id="searchBtn">Search</button>
+        </div>
+      </div>
+
+      <div id="errorMessage"></div>
+
+    </div>
+
+
+    <script src="src/rain.js"></script>
+    <script src="src/snowstorm.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
+
