@@ -1,6 +1,6 @@
 # VisualWeather
 
-[**Link to the project**](http://stupidblogs.me/VisualWeather/)
+[**Link to the project**](https://yug34.github.io/VisualWeather/)
 
 Simple web app using OpenWeathermap's API.
 
